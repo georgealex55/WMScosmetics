@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10283c">
+  <meta name="description" content="Cosmetics warehouse operations and batch manufacturing prototype">
+  <title>Formary | Cosmetics Warehouse</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brand-mark">F<span>+</span></div><div><strong>formary</strong><small>OPERATIONS PLATFORM</small></div></div>
+      <div class="location"><div class="location-icon">⌂</div><div><b>Central Facility</b><small>WH-01 · Single warehouse</small></div><span class="chevron">⌄</span></div>
+      <div class="nav-caption">WORKSPACE</div>
+      <nav id="main-nav">
+        <button class="nav-link active" data-view="dashboard"><span class="nav-icon">▦</span>Overview</button>
+        <button class="nav-link" data-view="inventory"><span class="nav-icon">▤</span>Inventory & locations</button>
+        <button class="nav-link" data-view="receiving"><span class="nav-icon">↙</span>Receiving</button>
+        <button class="nav-link" data-view="formulas"><span class="nav-icon">⚗</span>Formulations</button>
+        <button class="nav-link" data-view="production"><span class="nav-icon">◈</span>Batch production</button>
+        <button class="nav-link" data-view="quality"><span class="nav-icon">✓</span>Quality control</button>
+        <button class="nav-link" data-view="activity"><span class="nav-icon">☷</span>Activity log</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="demo-dot"></div><div><b>Demo workspace</b><small>Local browser data only</small></div></div>
+    </aside>
+    <div class="main-area">
+      <header class="topbar"><button class="mobile-menu" id="menu-toggle" aria-label="Toggle navigation">☰</button><div class="breadcrumb">Workspace <span>/</span> <strong id="crumb">Overview</strong></div><div class="top-right"><span class="pill-demo">● DEMO MODE</span><span class="avatar">OP</span></div></header>
+      <main class="content">
+        <section class="page-head"><div><div class="eyebrow">WAREHOUSE OPERATIONS / WH-01</div><h1 id="page-title">Warehouse overview</h1><p id="page-subtitle">Visibility across receiving, inventory, manufacturing and quality.</p></div><div class="head-actions"><button class="btn btn-ghost" id="reset-demo" title="Restore sample data">Reset demo</button><button class="btn btn-primary" id="primary-action">+ Receive material</button></div></section>
+        <div class="notice"><span class="notice-icon">ⓘ</span><span><b>Prototype environment:</b> Data is simulated and stored only in this browser. No ERPNext connection, shared database, authentication, or production audit guarantees.</span></div>
+        <div id="screen" aria-live="polite"></div>
+        <div class="footer">FORMARY WMS <span>•</span> Prototype v0.1 <span>•</span> WH-01 <span>•</span> All example chemicals and quantities are illustrative</div>
+      </main>
+    </div>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
