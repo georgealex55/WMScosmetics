@@ -1,6 +1,6 @@
-# WMScosmetics — Formary warehouse prototype
+# WMScosmetics — Lucky Heart Cosmetics warehouse prototype
 
-A standalone, responsive browser-based proof of concept for a **single-site cosmetics and chemical blending warehouse**.
+Lucky Heart Cosmetics-branded, responsive browser-based prototype for a **single-site cosmetics and chemical blending warehouse**. Visual branding is based on the owner-supplied logo and [Lucky Heart's website](https://luckyheart.com/).
 
 ## Demo features
 - Dashboard for available raw stock, lots, manufacturing batches, and QA holds
@@ -40,6 +40,9 @@ Build a dedicated Frappe app with:
 7. ERPNext stock ledger as the **single authoritative source of truth**.
 
 In production, stock deductions must be atomic, server-authorized transactions with concurrent inventory safeguards, not browser storage updates.
+
+## Brand assets
+The optimized Lucky Heart clover logo is stored at `assets/lucky-heart-logo.webp` and used in the sidebar, dashboard header and favicon.
 
 ## Project files
 - \`index.html\` — page shell and application navigation
