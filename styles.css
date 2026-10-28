@@ -209,3 +209,59 @@ td .sub{display:block;color:#96a4b4;font-size:10px;margin-top:4px}
   .formula-grid{flex-wrap:wrap}
   .content{padding:22px 13px}
 }
+
+
+/* Lucky Heart Cosmetics visual identity — red, black and white. */
+:root{--navy:#0b0b0d;--navy2:#171719;--blue:#c91d2d;--blue-hover:#a91624;--blue-soft:#fff0f1;--blue-line:#efc1c7;--bg:#f8f8f9;--line:#e9e9eb;--ink:#151515;--muted:#6c7078;--card:#fff}
+body{background:var(--bg);color:var(--ink)}
+.sidebar{background:linear-gradient(180deg,#080809,#151519);border-right:1px solid #29292d}
+.brand.brand-lucky{display:flex;flex-direction:column;align-items:center;text-align:center;gap:5px;padding:2px 0 25px}
+.brand-logo{display:block;width:110px;height:110px;object-fit:contain;border-radius:2px}
+.brand-name strong{color:#fff;font-size:19px;line-height:1.15;letter-spacing:1.6px}
+.brand-name span{display:block;font-size:13px;font-weight:800;letter-spacing:4px;color:#f0a8b0;margin:5px 0 2px}
+.brand-name small{font-size:9px;letter-spacing:2px;color:#9d9da7;margin-top:8px}
+.location{background:#202023;border-color:#39393c}
+.location-icon{background:#3b1b1d;color:#ffb8bd}
+.location b{color:#fff}.location small,.chevron{color:#aaaab2}
+.nav-caption{color:#8d8d96}.nav-link{color:#b8b7bd}.nav-icon{color:#a1a1a9}
+.nav-link:hover{background:#2b2023;color:#fff}
+.nav-link.active{background:#40191e;border-color:#812a35;box-shadow:inset 3px 0 0 #ef3443}
+.nav-link.active .nav-icon{color:#ff777f}
+.sidebar-bottom{border-top-color:#39393d}.sidebar-bottom b{color:#fff}.sidebar-bottom small{color:#aaa}
+.demo-dot{background:#d82b38;box-shadow:0 0 0 5px #4d2228}
+.breadcrumb strong{color:#191919}
+.top-locator{color:#525258}.top-locator:hover{background:#fff0f1;color:#bd1b2a}
+.top-site{color:#3b3b43;text-decoration:none;font-size:11px;font-weight:700;white-space:nowrap;border-left:1px solid #e8e8ea;padding-left:17px}
+.top-site:hover{color:#be1c2b}
+.pill-demo{background:#f3f3f4;color:#57575d}.demo-pulse{background:#d32b37}
+.avatar{background:#cb1f2e;color:#fff;border-radius:50%}
+.eyebrow,.text-link{color:#bc1c2a}
+h1,.panel-head h2,.formula-card h3{color:#171717}
+.btn-primary{background:#c91d2d;border-color:#c91d2d;box-shadow:0 4px 12px #b52b3c24}
+.btn-primary:hover{background:#a91624;border-color:#a91624;color:#fff}
+.btn:not(.btn-primary):hover{border-color:#e4a1a8;background:#fff9f9}
+.metric,.panel,.formula-card{border-color:#e8e8e8}
+.metric:before{background:linear-gradient(90deg,#d51e30,#ffd8dd)}
+.metric-icon,.quick-icon{background:#fff0f1;color:#c91d2d}
+.metric-detail strong{color:#c91d2d}
+.barrow .barfill{background:linear-gradient(90deg,#bd1525,#f36a72)}
+.quick:hover{background:#fffafa;border-color:#eab6bb}
+th{background:#f9f9fa}tbody tr:hover{background:#fffafa}
+.chip{background:#f7f7f8;border-color:#e8e8eb;color:#484853}
+.status.released,.status.approved,.status.completed{background:#fce9eb;color:#a8202e}
+.status.active{background:#ffedef;color:#bc2431}
+.hint{background:#fff7f7;border-color:#f4d8da;color:#685157}
+.timeline li{border-left-color:#f1cdd1}.timeline li:before{background:#d9283a}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#df717c;box-shadow:0 0 0 3px #cc243018}
+#toast{background:#18181b;border-left-color:#d32232}
+.footer strong{color:#46464b}.footer a{color:#b81c2b;text-decoration:none;font-weight:700}.footer a:hover{text-decoration:underline}
+.heritage-hero{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:22px;padding:25px 32px;border-radius:12px;overflow:hidden;min-height:145px;background:linear-gradient(112deg,#101013,#191417 60%,#2b1117);color:white;position:relative;box-shadow:0 8px 19px #24101815}
+.heritage-hero:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:#e32736}
+.hero-copy{position:relative;z-index:1}
+.hero-kicker{font-size:10px;color:#ff9aa4;letter-spacing:1.75px;font-weight:800}
+.heritage-hero h2{color:#fff;font-size:23px;letter-spacing:-.65px;margin:9px 0 7px;font-weight:800}
+.heritage-hero p{color:#c8c3c6;font-size:12px;margin:0;max-width:550px;line-height:1.6}
+.hero-logo{width:116px;height:116px;object-fit:contain;flex:none;opacity:.95}
+@media(max-width:900px){.top-site{display:none}}
+@media(max-width:600px){.brand.brand-lucky{padding-bottom:17px}.heritage-hero{padding:22px 20px;min-height:126px}.heritage-hero h2{font-size:20px;max-width:280px}.hero-logo{width:75px;height:75px;align-self:flex-start}.hero-kicker{font-size:9px;letter-spacing:1.1px}}
+@media(max-width:400px){.heritage-hero p{font-size:11px}.hero-logo{width:62px;height:62px}}
