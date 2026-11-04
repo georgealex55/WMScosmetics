@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0b0d">
-  <meta name="description" content="Lucky Heart Cosmetics warehouse operations, inventory, formulations and batch manufacturing.">
-  <title>Lucky Heart Cosmetics | Warehouse Operations</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#151316">
+  <meta name="description" content="Lucky Heart Cosmetics warehouse operations: inventory, receiving, formulations, manufacturing and quality control.">
+  <title>Lucky Heart Cosmetics — Warehouse Operations</title>
   <link rel="icon" type="image/webp" href="/assets/lucky-heart-logo.webp">
   <link rel="stylesheet" href="/styles.css">
   <script src="/app.js" defer></script>
@@ -13,26 +13,66 @@
 <body>
   <div class="shell">
     <aside class="sidebar" id="sidebar">
-      <div class="brand brand-lucky"><img class="brand-logo" src="/assets/lucky-heart-logo.webp" width="110" height="110" alt="Lucky Heart logo, established 1935"><div class="brand-name"><strong>LUCKY HEART</strong><span>COSMETICS</span><small>WAREHOUSE OPERATIONS</small></div></div>
-      <div class="location"><div class="location-icon">⌂</div><div><b>Memphis Facility</b><small>WH-01 · Manufacturing</small></div><span class="chevron">⌄</span></div>
-      <div class="nav-caption">WORKSPACE</div>
-      <nav id="main-nav">
-        <button class="nav-link active" data-view="dashboard"><span class="nav-icon">▦</span>Overview</button>
-        <button class="nav-link" data-view="inventory"><span class="nav-icon">▤</span>Inventory & locations</button>
-        <button class="nav-link" data-view="receiving"><span class="nav-icon">↙</span>Receiving</button>
-        <button class="nav-link" data-view="formulas"><span class="nav-icon">⚗</span>Formulations</button>
-        <button class="nav-link" data-view="production"><span class="nav-icon">◈</span>Batch production</button>
-        <button class="nav-link" data-view="quality"><span class="nav-icon">✓</span>Quality control</button>
-        <button class="nav-link" data-view="activity"><span class="nav-icon">☷</span>Activity log</button>
+      <div class="brand">
+        <img class="brand-logo" src="/assets/lucky-heart-logo.webp" width="72" height="72" alt="Lucky Heart logo">
+        <div class="brand-name"><strong>Lucky Heart</strong><span>COSMETICS</span><small>WAREHOUSE SYSTEM</small></div>
+      </div>
+      <div class="side-divider"></div>
+      <div class="side-section-label">YOUR FACILITY</div>
+      <div class="location">
+        <span class="location-icon" aria-hidden="true">⌂</span>
+        <div class="location-details"><b>Memphis Warehouse</b><small>WH-01 <span class="dot-divider">·</span> Manufacturing</small></div>
+        <span class="chevron" aria-hidden="true">⌄</span>
+      </div>
+      <nav id="main-nav" aria-label="Warehouse navigation">
+        <div class="nav-caption">OPERATIONS</div>
+        <button class="nav-link active" type="button" data-view="dashboard"><span class="nav-icon" aria-hidden="true">▦</span><span class="nav-text">Dashboard</span><span class="nav-arrow" aria-hidden="true">›</span></button>
+        <button class="nav-link" type="button" data-view="inventory"><span class="nav-icon" aria-hidden="true">▤</span><span class="nav-text">Inventory & locations</span><span class="nav-arrow" aria-hidden="true">›</span></button>
+        <button class="nav-link" type="button" data-view="receiving"><span class="nav-icon" aria-hidden="true">↧</span><span class="nav-text">Receiving</span><span class="nav-arrow" aria-hidden="true">›</span></button>
+        <div class="nav-caption nav-caption-spaced">MANUFACTURING</div>
+        <button class="nav-link" type="button" data-view="formulas"><span class="nav-icon" aria-hidden="true">⚗</span><span class="nav-text">Formulations</span><span class="nav-arrow" aria-hidden="true">›</span></button>
+        <button class="nav-link" type="button" data-view="production"><span class="nav-icon" aria-hidden="true">◈</span><span class="nav-text">Batch production</span><span class="nav-arrow" aria-hidden="true">›</span></button>
+        <button class="nav-link" type="button" data-view="quality"><span class="nav-icon" aria-hidden="true">✓</span><span class="nav-text">Quality control</span><span class="nav-arrow" aria-hidden="true">›</span></button>
+        <div class="nav-caption nav-caption-spaced">SYSTEM</div>
+        <button class="nav-link" type="button" data-view="activity"><span class="nav-icon" aria-hidden="true">☷</span><span class="nav-text">Activity log</span><span class="nav-arrow" aria-hidden="true">›</span></button>
       </nav>
-      <div class="sidebar-bottom"><div class="demo-dot"></div><div><b>Lucky Heart WMS</b><small>Single warehouse · Demo</small></div></div>
+      <div class="sidebar-bottom">
+        <div class="sidebar-bottom-icon" aria-hidden="true">LH</div>
+        <div><b>Lucky Heart Cosmetics</b><small>Established 1935</small></div>
+        <span class="mini-dot" aria-hidden="true"></span>
+      </div>
     </aside>
     <div class="main-area">
-      <header class="topbar"><button class="mobile-menu" id="menu-toggle" aria-label="Toggle navigation">☰</button><div class="breadcrumb">Lucky Heart <span>/</span> <strong id="crumb">Overview</strong></div><div class="top-right"><button class="top-locator" data-view="inventory"><span aria-hidden="true">⌕</span> Find inventory</button><a class="top-site" href="https://luckyheart.com/" target="_blank" rel="noopener noreferrer">Company website ↗</a><span class="pill-demo"><span class="demo-pulse"></span> DEMO</span><span class="avatar">LH</span></div></header>
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="mobile-menu" id="menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="sidebar">☰</button>
+          <div class="breadcrumb">Workspace <span>/</span> <strong id="crumb">Overview</strong></div>
+        </div>
+        <div class="top-right">
+          <button class="top-locator" type="button" data-view="inventory" aria-label="Find ingredients"><span aria-hidden="true">⌕</span><span>Find ingredient</span></button>
+          <span class="topbar-separator" aria-hidden="true"></span>
+          <a class="top-site" href="https://luckyheart.com/" target="_blank" rel="noopener noreferrer">Luckyheart.com <span aria-hidden="true">↗</span></a>
+          <span class="pill-demo"><span class="demo-pulse"></span> DEMO</span>
+          <span class="avatar" title="Lucky Heart">LH</span>
+        </div>
+      </header>
       <main class="content">
-        <section class="page-head"><div><div class="eyebrow">LUCKY HEART COSMETICS / WH-01</div><h1 id="page-title">Warehouse overview</h1><p id="page-subtitle">Visibility across receiving, inventory, manufacturing and quality.</p></div><div class="head-actions"><button class="btn btn-ghost" id="reset-demo" title="Restore sample data">Reset demo</button><button class="btn btn-primary" id="primary-action">+ Receive material</button></div></section>
+        <section class="page-head">
+          <div class="page-head-copy">
+            <div class="eyebrow"><span class="eyebrow-rule"></span> LUCKY HEART COSMETICS / WH-01</div>
+            <h1 id="page-title">Warehouse overview</h1>
+            <p id="page-subtitle">Visibility across receiving, inventory, manufacturing and quality.</p>
+          </div>
+          <div class="head-actions">
+            <button class="btn btn-ghost" id="reset-demo" type="button">↺ <span>Reset demo</span></button>
+            <button class="btn btn-primary" id="primary-action" type="button">+ Receive material</button>
+          </div>
+        </section>
         <div id="screen" aria-live="polite"></div>
-        <div class="footer"><strong>LUCKY HEART COSMETICS · EST. 1935</strong> <span>·</span> Warehouse WH-01 <span>·</span> Demo records saved in this browser <span>·</span> <a href="https://luckyheart.com/" target="_blank" rel="noopener noreferrer">luckyheart.com ↗</a></div>
+        <footer class="footer">
+          <div><strong>LUCKY HEART COSMETICS</strong><span class="footer-em">EST. 1935</span></div>
+          <div>WH-01 <span class="footer-dot">·</span> Local demo data <span class="footer-dot">·</span> <a href="https://luckyheart.com/" target="_blank" rel="noopener noreferrer">Company website ↗</a></div>
+        </footer>
       </main>
     </div>
   </div>
